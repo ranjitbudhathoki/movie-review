@@ -68,7 +68,7 @@ export default function ReviewAddForm({ handleReviewAdd }: reviewAddFormProps) {
 
   return (
     <form
-      className="flex flex-col w-96 gap-5 bg-blue-200 p-8 m-4"
+      className="flex flex-col w-96 h-2/4 gap-5 bg-blue-200 p-8 m-4"
       onSubmit={handleSubmit}
     >
       <label>🎬 Movie name:</label>

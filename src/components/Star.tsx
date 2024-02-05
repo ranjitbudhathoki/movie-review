@@ -1,9 +1,11 @@
 export default function Star({
   onRate,
   full,
+  disabled,
 }: {
   onRate: () => void;
   full: boolean;
+  disabled?: boolean;
 }) {
   const starStyle = {
     height: "32px",
@@ -14,7 +16,16 @@ export default function Star({
   const color = "yellow";
 
   return (
-    <span role="button" style={starStyle} onClick={onRate}>
+    <span
+      role="button"
+      style={starStyle}
+      onClick={() => {
+        if (disabled) {
+          return;
+        }
+        onRate();
+      }}
+    >
       {full ? (
         <svg
           xmlns="http://www.w3.org/2000/svg"

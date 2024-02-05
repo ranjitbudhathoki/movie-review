@@ -3,12 +3,14 @@ import Star from "./Star";
 
 type starRatingProps = {
   defaultRating: number;
-  onSetRating: (rating: number) => void;
+  onSetRating?: (rating: number) => void;
+  disabled?: boolean;
 };
 
 export default function StarRating({
   defaultRating = 1,
-  onSetRating,
+  onSetRating = () => {},
+  disabled,
 }: starRatingProps) {
   const [rating, setRating] = useState(defaultRating);
 
@@ -28,6 +30,7 @@ export default function StarRating({
           key={i}
           onRate={() => handleClick(i + 1)}
           full={rating >= i + 1}
+          disabled={disabled}
         />
       ))}
     </div>
