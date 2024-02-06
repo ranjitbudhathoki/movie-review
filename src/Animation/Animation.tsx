@@ -22,7 +22,7 @@ const data: TableData[] = [
 
 export default function Animation() {
   return (
-    <main className="h-screen bg-black text-white w-full">
+    <main className="h-screen bg-cover bg-[url('https://www.pixel4k.com/wp-content/uploads/2018/12/pubg-playerunknown-s-battlegrounds-4k-wallpaper_1544828187.jpg')] text-white w-full">
       <div className="flex flex-col gap-20 p-10">
         <Heading />
         <div className="flex justify-between">
