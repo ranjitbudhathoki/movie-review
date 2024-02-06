@@ -33,7 +33,7 @@ export default function App() {
   );
 
   return (
-    <main className="bg-[#FFF7F1] h-full w-full">
+    <main className="bg-[#FFF7F1] h-screen w-full">
       <Header onSearch={handleSearch} searchTerm={searchTerm} />
       <div className="flex justify-between">
         <Reviews reviews={filteredReviews} />

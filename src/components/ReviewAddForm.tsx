@@ -73,7 +73,7 @@ export default function ReviewAddForm({ handleReviewAdd }: reviewAddFormProps) {
     >
       <label>🎬 Movie name:</label>
       <input
-        className="h-10 border-solid border-2"
+        className="h-10 border-solid border-2 p-2"
         type="text"
         value={movieName}
         onChange={(e) => {
@@ -87,7 +87,7 @@ export default function ReviewAddForm({ handleReviewAdd }: reviewAddFormProps) {
       </span>
       <label>💬 Comment: </label>
       <textarea
-        className="h-10 border-solid border-2"
+        className="h-10 border-solid border-2 p-2"
         cols={5}
         value={comment}
         onChange={(e) => setComment(e.target.value)}
